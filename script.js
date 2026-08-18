@@ -6,7 +6,7 @@
    ========================================================================= */
 
 const GEMINI_API_KEY =
-  "AQ.Ab8RN6L9CIjv1IFmGGyqtLe0zL_di8rFvKgcfDDf75J0mB2njA";
+  "AQ.Ab8RN6I9taFYeMCdE9RNNZB6_iqz0UzhWv8oft4EpxGKBk27Mw";
 const APP_NAME = "Nebula Chat";
 const APP_URL = typeof window !== "undefined" ? window.location.origin : "";
 
@@ -335,6 +335,9 @@ form.addEventListener("submit", (e) => {
   const text = input.value.trim();
   if ((!text && !pendingAttachments.length) || isStreaming) return;
   send(text);
+  // Clear the composer so the next message can be typed without manual deletion
+  input.value = "";
+  autoresize();
 });
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && !e.shiftKey) {

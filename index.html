@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula — AI that thinks alongside you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="bg-grid"></div>
+
+  <header class="nav glass">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.5 7.5L19 9L13.5 10.5L12 16L10.5 10.5L5 9L10.5 7.5L12 2Z"/></svg>
+      </div>
+      <span>Nebula</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#modes">Modes</a>
+      <a href="#how">How it works</a>
+      <a class="nav-cta" href="chat.html">Launch app →</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-tag glass-inner">
+        <span class="dot"></span> Powered by Gemini · Streaming
+      </div>
+      <h1 class="hero-title">
+        <span class="slogan" id="slogan">Think clearer. Create faster.</span>
+        <span class="hero-cursor" aria-hidden="true">|</span>
+      </h1>
+      <p class="hero-sub">
+        Nebula is a glass-sleek AI workspace with multiple thinking modes, image and file understanding, and a developer-friendly tool flow — all in one calm interface.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="chat.html">
+          Start chatting
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn ghost" href="#features">See features</a>
+      </div>
+
+      <!-- Floating preview card -->
+      <div class="preview glass">
+        <div class="preview-head">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="preview-title">nebula · thinking mode</span>
+        </div>
+        <div class="preview-body">
+          <div class="pmsg user">How do I make glassmorphism feel premium?</div>
+          <div class="pmsg bot">
+            <div class="pthink">Layered translucency, soft inner highlights, and subtle colored blur behind the surface…</div>
+            Combine a 22px backdrop-blur, a 1px white inner stroke, and three colored orbs floating behind the glass — that triad is what reads as "premium" rather than "sketchy."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <header class="section-head">
+        <span class="kicker">Features</span>
+        <h2>Everything you need in a calm, focused workspace.</h2>
+      </header>
+      <div class="grid features">
+        <article class="card glass">
+          <div class="card-icon">💬</div>
+          <h3>Streaming chat</h3>
+          <p>Token-by-token responses feel instant. Stop, regenerate, and copy with one click.</p>
+        </article>
+        <article class="card glass">
+          <div class="card-icon">🧠</div>
+          <h3>Multiple modes</h3>
+          <p>Switch between Chat, Thinking, Research, Advanced Coding, and Developer Tools on the fly.</p>
+        </article>
+        <article class="card glass">
+          <div class="card-icon">🖼</div>
+          <h3>Images &amp; files</h3>
+          <p>Drop in images, PDFs, or code files. Gemini sees them inline and reasons over them.</p>
+        </article>
+        <article class="card glass">
+          <div class="card-icon">🪞</div>
+          <h3>Glassmorphic UI</h3>
+          <p>Floating gradient orbs, blurred surfaces, and quiet typography for a futuristic, minimalist feel.</p>
+        </article>
+        <article class="card glass">
+          <div class="card-icon">📝</div>
+          <h3>Markdown that renders</h3>
+          <p>Code blocks, lists, quotes, tables, and links all render cleanly — escape-first, safe by default.</p>
+        </article>
+        <article class="card glass">
+          <div class="card-icon">⌨</div>
+          <h3>Keyboard-first</h3>
+          <p>Enter to send, Shift+Enter for newlines, auto-resizing composer, hover-to-reveal actions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MODES -->
+    <section id="modes" class="section">
+      <header class="section-head">
+        <span class="kicker">Modes</span>
+        <h2>Five ways to think — pick the one that fits the task.</h2>
+      </header>
+      <div class="grid modes">
+        <article class="mode-card glass" data-mode="chat">
+          <span class="mode-chip">Chat</span>
+          <h3>Default friendly assistant</h3>
+          <p>Concise answers with Markdown formatting. Perfect for everyday questions.</p>
+        </article>
+        <article class="mode-card glass" data-mode="thinking">
+          <span class="mode-chip">Thinking</span>
+          <h3>Step-by-step reasoning</h3>
+          <p>Surface a transparent chain-of-thought block before the final answer.</p>
+        </article>
+        <article class="mode-card glass" data-mode="research">
+          <span class="mode-chip">Research</span>
+          <h3>Structured brief with sources</h3>
+          <p>TL;DR, key findings, and a clickable sources list pulled into a side panel.</p>
+        </article>
+        <article class="mode-card glass" data-mode="coding">
+          <span class="mode-chip">Advanced Coding</span>
+          <h3>Plan + code + tests</h3>
+          <p>Production-quality code blocks with idiomatic patterns and focused unit tests.</p>
+        </article>
+        <article class="mode-card glass" data-mode="devtools">
+          <span class="mode-chip">Developer Tools</span>
+          <h3>curl → output → continue</h3>
+          <p>Run shell or API commands, paste the output back, and Nebula continues the loop.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <header class="section-head">
+        <span class="kicker">How it works</span>
+        <h2>From question to answer in three quiet steps.</h2>
+      </header>
+      <ol class="steps">
+        <li class="glass">
+          <span class="step-num">01</span>
+          <h3>Pick a mode</h3>
+          <p>Each mode tunes the system prompt, temperature, and (when needed) the model.</p>
+        </li>
+        <li class="glass">
+          <span class="step-num">02</span>
+          <h3>Add context</h3>
+          <p>Attach images or files, or just type — auto-resizing composer keeps you in flow.</p>
+        </li>
+        <li class="glass">
+          <span class="step-num">03</span>
+          <h3>Stream the answer</h3>
+          <p>Tokens render as they arrive. Copy any reply, switch modes, or clear to start fresh.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band glass">
+      <h2>Ready when you are.</h2>
+      <p>No signup. No clutter. Just the model and a quiet place to think.</p>
+      <a class="btn primary" href="chat.html">
+        Open Nebula
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© Nebula · Built with Gemini · Glassmorphic by design</span>
+  </footer>
+
+  <script src="landing.js"></script>
+</body>
+</html>
